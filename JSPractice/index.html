@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>subtryo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center><h1>welcome to SUBTRYO</h1></center><br><br>
+        <center><div>
+            <form name="login" onsubmit="return check()" action="index2.html">
+            <b><label class="label">Enter Username: </label><br></b>
+            <input type="email" name="email" required><br><br>
+
+            <b><label class="label">Enter Password: </label><br></b>
+            <input type="password" name="password" required><br><br>
+            <button type="submit">login</button>
+        </form></div></center>
+        <script>
+        function check(){
+            var mail=document.login.email.value
+            var password=document.login.password.value
+            if(mail=="v@gmail.com" && password=="kkkkk"){
+                return true
+            }
+            else{
+                alert("wrong credentials")
+                return false
+            }
+        }
+        </script>
+    </body>
+</html>
